@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useRef } from "react";
 
 
 const stateContext = createContext()
@@ -16,9 +16,11 @@ export const ContextProvider = ({ children }) => {
     const previousColor = localStorage.getItem('colorMode')
     const previousMode = localStorage.getItem('themeMode')
 
+    const windowSize = useRef(window.innerWidth);
+
     const [activeMenu, setActiveMenu] = useState(true)
     const [isClicked, setIsClicked] = useState(initialState)
-    const [screenSize, setScreenSize] = useState(undefined)
+    const [screenSize, setScreenSize] = useState(windowSize)
     const [currentColor, setCurrentColor] = useState(previousColor ? previousColor : '#03C9D7')
     const [currentMode, setCurrentMode] = useState(previousMode ? previousMode : 'Light')
     const [themeSetting, setThemeSetting] = useState(false)
