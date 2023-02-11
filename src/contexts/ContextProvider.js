@@ -24,8 +24,6 @@ export const ContextProvider = ({ children }) => {
     const [themeSetting, setThemeSetting] = useState(false)
 
 
-    // setCurrentMode(() => localStorage.getItem('themeMode') ) 
-    // currentColor = localStorage.getItem('colorMode');
 
 
 
