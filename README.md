@@ -6,5 +6,5 @@ created using ReactJS, Syncfusion, Framer-motion
 
 ## Deployed link  :-
 
-
+https://admin-dashboard-using-react.netlify.app/
 
