@@ -11,4 +11,4 @@ https://admin-dashboard-using-react.netlify.app/
 - Dark mode and Light mode
 - Different Themes options
 - Responsive
-- Data charts
+- Data visualization using charts and graphs
